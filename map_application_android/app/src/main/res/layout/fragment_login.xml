@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:contextClickable="true"
+                android:background="@android:color/white"
+                tools:context=".LoginFragment">
+
+    <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/login"
+            android:textSize="50sp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="10dp"
+            android:layout_above="@id/tv_subtitle"/>
+
+    <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tag"
+            android:textSize="17sp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_marginStart="25dp"
+            android:layout_marginBottom="50dp"
+            android:layout_above="@id/loginUsername_editText"/>
+
+    <RelativeLayout android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="10dp"
+                    android:layout_above="@id/loginUsername_editText"
+                    android:gravity="center"
+                    android:id="@+id/rl_loginFailed"
+                    android:visibility="invisible">
+
+        <ImageView android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:src="@drawable/ic_exclamation_mark"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text="Invalid username or password!"
+                  android:layout_marginStart="30dp"
+                  android:textSize="16sp"
+                  android:textColor="#8B0000"/>
+
+    </RelativeLayout>
+
+    <EditText
+            android:id="@+id/loginUsername_editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/username"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="15dp"
+            android:inputType="textEmailAddress"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_above="@id/loginPassword_editText"
+            android:background="@drawable/et_custom"
+            android:textSize="15sp"/>
+
+    <EditText
+            android:id="@+id/loginPassword_editText"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="@string/password"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:padding="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:inputType="textPassword"
+            android:layout_centerInParent="true"
+            android:background="@drawable/et_custom"
+            android:textSize="15sp"/>
+
+    <Button
+            android:id="@+id/loginFragment_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginPassword_editText"
+            android:background="@drawable/btn_custom_login"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@android:color/white"
+            android:text="@string/login"/>
+
+    <!--    <ImageView-->
+    <!--            android:layout_width="30dp"-->
+    <!--            android:layout_height="30dp"-->
+    <!--            android:src="@drawable/ic_arrow_right"-->
+    <!--            android:layout_above="@id/swipeRight"-->
+    <!--            android:layout_centerHorizontal="true"/>-->
+
+    <TextView
+            android:id="@+id/swipeRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Not Registered ?"
+            android:textSize="15sp"
+            android:fontFamily="@font/roboto_regular"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"/>
+
+</RelativeLayout>

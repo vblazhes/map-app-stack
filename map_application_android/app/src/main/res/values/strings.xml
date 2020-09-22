@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">map_application_android</string>
+    <string name="content_description_media">media image dummy</string>
+    <string name="title">Ohrid</string>
+    <string name="secondary_text">City in the Republic of Macedonia</string>
+    <string name="supporting_text">Ohrid is a small resort city on the hilly shores of Lake Ohrid in the southwest of
+        the Republic of Macedonia.
+    </string>
+    <string name="title_activity_map_view1">Map</string>
+    <string name="title_activity_create_new_map">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_test">TestActivity</string>
+
+    <string-array name="map_visibility">
+        <item>private</item>
+        <item>public</item>
+    </string-array>
+
+    <string-array name="map_style">
+        <item>Basic</item>
+        <item>Satellite</item>
+        <item>Decimal</item>
+        <item>Streets</item>
+        <item>Navigation</item>
+        <item>Monochrome</item>
+        <item>Outdoors</item>
+    </string-array>
+
+
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="password">Password</string>
+    <string name="e_mail">Email</string>
+    <string name="your_name">Name</string>
+    <string name="re_type_password">Re-type Password</string>
+    <string name="tag">Let\'s join us and \nBuild your relationship with others</string>
+    <string name="username">Username</string>
+    <string name="title_activity_edit_map">Map</string>
+    <string name="page_title">page_title</string>
+    <string name="title_activity_user_profile_new">UserProfileNewActivity</string>
+    <!--
+    This string is used for square devices and overridden by hello_world in
+    values-round/strings.xml for round devices.
+    -->
+    <string name="hello_world">Hello Square World!</string>
+
+
+</resources>

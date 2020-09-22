@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   android:layout_width="match_parent"
+                                   android:layout_height="wrap_content"
+                                   android:layout_marginStart="8dp"
+                                   android:layout_marginEnd="8dp"
+                                   android:layout_marginTop="8dp">
+
+    <RelativeLayout android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp">
+
+        <ImageView
+                android:id="@+id/pin_photo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/media"
+                android:scaleType="centerCrop"
+        />
+
+        <TextView android:id="@+id/textView_map_name"
+                  android:layout_width="264dp"
+                  android:layout_height="wrap_content"
+                  android:text="Map_Name"
+                  android:layout_alignStart="@id/pin_photo"
+                  android:maxLines="3"
+                  android:textSize="20sp"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Large" android:layout_marginStart="115dp"
+                  android:layout_marginEnd="-115dp"/>
+
+        <TextView android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:id="@+id/textView_lat"
+                  android:text="latitude:"
+                  android:layout_below="@id/textView_map_name"
+                  android:layout_alignStart="@id/pin_photo"
+                  android:layout_toStartOf="@+id/textView_map_id"
+                  android:layout_marginTop="10dp" android:layout_marginStart="115dp" android:layout_marginEnd="-115dp"/>
+
+        <TextView
+                android:text="longitude:"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:id="@+id/textView_lng"
+                android:layout_below="@id/textView_lat"
+                android:layout_alignStart="@id/pin_photo"
+                android:layout_toStartOf="@+id/textView_map_id"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="115dp" android:layout_marginEnd="-115dp"/>
+
+        <TextView android:id="@+id/textView_map_id"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:layout_alignParentEnd="true"
+                  android:textAppearance="@style/TextAppearance.AppCompat.Large"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
