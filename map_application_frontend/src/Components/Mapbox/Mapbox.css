@@ -1,0 +1,12 @@
+.mapboxgl-ctrl-top-right {
+    top: 0;
+    right: 0;
+}
+
+.mapboxgl-ctrl-top-right {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    background: white;
+}
+
